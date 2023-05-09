@@ -30,14 +30,14 @@ workflows:
     - approval:
         type: approval
         requires:
-          - saluda
+          - hola
     - adios:
         requires:
           - approval
   nightly:
     triggers:
       - schedule:
-            cron: "15 15 * * *"
+            cron: "15 18 * * *"
             filters:
               branches:
                 only:
