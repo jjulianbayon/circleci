@@ -8,3 +8,7 @@ jobs:
     steps:
       - checkout
       - run: brew install wget
+workflows:
+  hello:
+    jobs:
+      - build
