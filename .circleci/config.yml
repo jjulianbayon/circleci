@@ -1,6 +1,6 @@
 version: 2.1
 jobs:
-  build-and-test:
+  build:
     macos:
       xcode: 14.2.0
     environment:
@@ -10,6 +10,6 @@ jobs:
       - run: brew install wget
       - run: xcodebuild -version
 workflows:
-   build-and-test:
-    jobs:
-      - build
+   hello:
+      jobs:
+        - build
